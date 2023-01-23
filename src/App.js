@@ -3,7 +3,7 @@ import "./App.css";
 import Details from "./Components/Details";
 import HomeScreen from "./Components/HomeScreen";
 import Login from "./Components/Login";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 function App() {
   return (

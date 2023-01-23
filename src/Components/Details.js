@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Details.css";
 import Navbar from "./Navbar";
 import SimilarMovie from "./SimilarMovie";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import axios from "axios";
 
