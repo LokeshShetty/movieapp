@@ -25,7 +25,7 @@ export default function Details() {
     url: "https://imdb8.p.rapidapi.com/title/get-details",
     params: { tconst: id },
     headers: {
-      "X-RapidAPI-Key": "ad7fc1f831msh044e80e65d11164p15376ajsnd121028258ed",
+      "X-RapidAPI-Key": "939f476536msh7ebd8f27d0a729bp1bce46jsn3ae53c96d010",
       "X-RapidAPI-Host": "imdb8.p.rapidapi.com",
     },
   };
@@ -35,7 +35,7 @@ export default function Details() {
     url: "https://imdb8.p.rapidapi.com/title/get-synopses",
     params: { tconst: id },
     headers: {
-      "X-RapidAPI-Key": "ad7fc1f831msh044e80e65d11164p15376ajsnd121028258ed",
+      "X-RapidAPI-Key": "939f476536msh7ebd8f27d0a729bp1bce46jsn3ae53c96d010",
       "X-RapidAPI-Host": "imdb8.p.rapidapi.com",
     },
   };
@@ -45,7 +45,7 @@ export default function Details() {
     url: "https://imdb8.p.rapidapi.com/title/v2/find",
     params: { title: "game of", limit: "4", sortArg: "moviemeter,asc" },
     headers: {
-      "X-RapidAPI-Key": "ad7fc1f831msh044e80e65d11164p15376ajsnd121028258ed",
+      "X-RapidAPI-Key": "939f476536msh7ebd8f27d0a729bp1bce46jsn3ae53c96d010",
       "X-RapidAPI-Host": "imdb8.p.rapidapi.com",
     },
   };
@@ -119,13 +119,12 @@ export default function Details() {
               similar.length > 0 &&
               similar.map((movie) => {
                 return (
-                  <Link to={`/detail${movie.id}`}>
-                    <SimilarMovie
-                      id={movie?.id}
-                      title={movie?.title}
-                      url={movie?.image?.url}
-                    />
-                  </Link>
+                  <SimilarMovie
+                    key={movie.id}
+                    id={movie.id}
+                    title={movie?.title}
+                    url={movie?.image?.url}
+                  />
                 );
               })}
           </div>

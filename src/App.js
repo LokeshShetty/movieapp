@@ -6,7 +6,6 @@ import Login from "./Components/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const apiKey = process.env.API_KEY;
   return (
     <>
       <Routes>
