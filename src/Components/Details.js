@@ -121,7 +121,7 @@ export default function Details() {
                 return (
                   <Link to={`/detail${movie.id}`}>
                     <SimilarMovie
-                      id={movie.id}
+                      id={movie?.id}
                       title={movie?.title}
                       url={movie?.image?.url}
                     />
